@@ -1,1 +1,1 @@
-# seo-setup
+#Impostazioni SEO di alcuni parametri
