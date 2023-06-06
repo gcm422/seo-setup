@@ -1,0 +1,13 @@
+https://www.miosito.it/index.php/*
+https://www.miosito.it/wishlist/*
+https://www.miosito.it/catalog/*
+https://www.miosito.it/js/*
+https://www.miosito.it/media/*
+https://www.miosito.it/customer/*
+https://www.miosito.it/product/*
+https://www.miosito.it/skin/*
+https://www.miosito.it/checkout/*
+https://www.miosito.it/cdn-cgi/*
+https://www.miosito.it/static/*
+https://www.miosito.it\?
+
