@@ -1,0 +1,95 @@
+FEED facebook worldbusiness
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">  
+  <channel>  
+    <title>Catalogo Facebook</title>
+    <link>{base_url}</link>
+    <description>Prodotti del feed per facebook</description>
+    {each type="product"}
+    <item>
+    <g:id><![CDATA[{entity_id}]]></g:id>
+    <title><![CDATA[{name, [substr 0 120], [strtolower], [ucfirst]}]]></title>
+        <link><![CDATA[{base_url}catalog/product/view/id/{entity_id}]]></link>
+        <g:price>{special_price, [number_format 2]} EUR</g:price>
+        <description><![CDATA[{short_description, [substr 0 5000]}]]></description>
+        <g:product_type><![CDATA[{category_path}]]></g:product_type>
+        <g:google_product_category><![CDATA[{mapping:1}]]></g:google_product_category>
+        <g:image_link><![CDATA[{small_image}]]></g:image_link>
+        <g:additional_image_link><![CDATA[{image2}]]></g:additional_image_link>
+        <g:additional_image_link><![CDATA[{image3}]]></g:additional_image_link>
+        <g:additional_image_link><![CDATA[{image4}]]></g:additional_image_link>
+        <g:additional_image_link><![CDATA[{image5}]]></g:additional_image_link>
+        <g:condition>{googleshopping_condition}</g:condition>
+        <g:availability>in stock</g:availability>
+        <g:brand>{brand}</g:brand>
+      	<delete>{custom:fbdelete}</delete>
+       	<g:identifier_exists>{custom:iefalse}</g:identifier_exists>
+        <g:mpn><![CDATA[{sku}]]></g:mpn>
+      	<g:gtin>{custom:ean00}</g:gtin>
+      	<g:custom_label_0>{custom:filtroprezzo}</g:custom_label_0>
+      	<g:custom_label_1>{custom:grado_ricondizionamento}</g:custom_label_1>
+      	<g:custom_label_2>{custom:se_accessorio}</g:custom_label_2>
+      	<g:shipping_weight>{weight, [number_format 2]} kg</g:shipping_weight>
+      	<g:shipping> 
+          <g:country>IT</g:country>      
+          <g:service>Standard</g:service>
+          <g:price>{custom:spedizioneconsconto, [number_format 2]} EUR</g:price>
+     </g:shipping>
+    </item>
+    {/each}
+  </channel>
+</rss>
+
+FEED Google shopping
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">  
+  <channel>  
+    <title>Google Shopping Mondo Affari</title>
+    <link>{base_url}</link>
+    <description>Prodotti del feed per Google Shopping</description>
+    {each type="product"}
+    <item>
+    <g:id><![CDATA[{entity_id}]]></g:id>
+    <title><![CDATA[{name, [substr 0 120], [strtolower], [ucfirst]}]]></title>
+	<link><![CDATA[{base_url}catalog/product/view/id/{entity_id}]]></link>
+    <g:price>{special_price, [number_format 2]} EUR</g:price>
+    <description><![CDATA[{short_description, [substr 0 5000]}]]></description>
+    <g:product_type><![CDATA[{category_path}]]></g:product_type>
+        <g:google_product_category><![CDATA[{mapping:1}]]></g:google_product_category>
+        <g:image_link><![CDATA[{small_image}]]></g:image_link>
+        <g:additional_image_link><![CDATA[{image2}]]></g:additional_image_link>
+        <g:additional_image_link><![CDATA[{image3}]]></g:additional_image_link>
+        <g:additional_image_link><![CDATA[{image4}]]></g:additional_image_link>
+        <g:additional_image_link><![CDATA[{image5}]]></g:additional_image_link>
+        <g:condition>{googleshopping_condition}</g:condition>
+        <g:availability>in stock</g:availability>
+      	<g:brand>{brand}</g:brand>
+        <g:identifier_exists>{custom:iefalse}</g:identifier_exists>
+        <g:mpn>{sku}</g:mpn>
+        <g:gtin>{custom:ean00}</g:gtin>
+      <g:custom_label_0>{custom:filtroprezzo}</g:custom_label_0>
+      <g:custom_label_1>{custom:grado_ricondizionamento}</g:custom_label_1>
+      <g:custom_label_2>{custom:se_accessorio}</g:custom_label_2>
+        <g:shipping_weight>{weight, [number_format 2]} kg</g:shipping_weight>
+      	<g:shipping> 
+          <g:country>IT</g:country>      
+          <g:service>Standard</g:service>
+          <g:price>{custom:spedizioneconsconto, [number_format 2]} EUR</g:price>
+        </g:shipping>
+      </item>
+    {/each}
+  </channel>
+</rss>
+
+FILTRI
+
+ 	Se TUTTE queste condizioni sono VERE:
+   In feed è Sì
+   Exclude for Google Shopping is not assigned No
+   Quantità uguale o maggiore di 1
+   Price uguale o maggiore di 1
+   Special Price maggiore di 20
+   Accessorio non è Sì
+   Status è Abilitato 	Abilitato 	
