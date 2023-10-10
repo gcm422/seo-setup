@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^(.*)$ https://www.sito.it/$1 [R=301,L]
