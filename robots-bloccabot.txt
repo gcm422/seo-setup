@@ -991,8 +991,8 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 # https://www.qwant.com/
-User-agent: Qwantify
-Disallow: /
+#User-agent: Qwantify
+#Disallow: /
 # http://linkfluence.net/
 User-agent: Kraken
 Disallow: /
