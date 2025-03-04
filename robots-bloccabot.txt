@@ -895,6 +895,8 @@ User-agent: bot-traffic.xyz
 Disallow: /
 User-agent: ia_archiver
 Disallow: /
+User-agent: new archive.org_bot
+Disallow: /
 User-agent: linkdexbot
 Disallow: /
 # Disallow: jobs.de-Robot
