@@ -1030,3 +1030,6 @@ Disallow: /
 # http://warebay.com/bot.html
 User-agent: WBSearchBot
 Disallow: /
+
+
+Sitemap:
