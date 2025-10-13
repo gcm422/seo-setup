@@ -1,0 +1,8 @@
+ <script>
+/*sposta questo testo a fine pagina*/
+let cd = document.getElementById('dopo');
+let dest = document.getElementById('box-full-category-description');
+if(cd){
+dest.appendChild(cd);
+}
+</script>
