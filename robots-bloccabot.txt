@@ -2,6 +2,29 @@ User-agent: *
 Allow: /
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
+# WooCommerce: sezioni da non indicizzare
+Disallow: /carrello/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /wishlist/
+Disallow: /compare/
+# Log / upload tecnici Woo
+Disallow: /wp-content/uploads/wc-logs/
+Disallow: /wp-content/uploads/woocommerce_transient_files/
+Disallow: /wp-content/uploads/woocommerce_uploads/
+# Ricerca interna e parametri che generano duplicati
+Disallow: /*?*s=
+Disallow: /*?*add-to-cart=
+Disallow: /*?*orderby=
+Disallow: /*?*per_page=
+Disallow: /*?*per_row=
+Disallow: /*?*shop_view=
+Disallow: /*?*filter_
+Disallow: /*?*utm_
+Disallow: /*?*gclid=
+Disallow: /*?*fbclid=
+Disallow: /*?*_ga=
+Disallow: /*?*_gl=
 Disallow: /lib/
 Disallow: /*.php$
 Disallow: /pkginfo/
