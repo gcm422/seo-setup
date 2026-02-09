@@ -194,7 +194,7 @@ User-agent: CloudServerMarketSpider
 Disallow: /
 User-agent: CloudServerMarketSpider/1.0
 Disallow: /
- User-agent: Clushbot/3.x-BinaryFury
+User-agent: Clushbot/3.x-BinaryFury
 Disallow: /
 User-agent: CMS Crawler
 Disallow: /
@@ -642,7 +642,7 @@ User-agent: Scrapy/1.0.1
 Disallow: /
 User-agent: scrutiny/4
 Disallow: /
- User-agent: SEOdiver/1.0
+User-agent: SEOdiver/1.0
 Disallow: /
 User-agent: SEOkicks
 Disallow: /
